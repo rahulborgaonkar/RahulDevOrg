@@ -1,0 +1,20 @@
+<apex:page standardController="Feedback__c" extensions="FeedbackQuestionController">
+    <apex:form >
+        <apex:pageBlock title="Feedback Link" tabStyle="Feedback__c">
+            <apex:outputField value="{!feedback.Feedback_Link__c}"/>
+                <apex:pageBlockButtons location="bottom">            
+                    <apex:commandButton value="Send Link To Staff Email" action="{!sendLink}"/>
+                </apex:pageBlockButtons>              
+        </apex:pageBlock>
+        <apex:pageBlock title="Feedback Questions" tabStyle="Feedback__c">
+            <apex:pageBlockTable value="{!question}" var="item">
+                <apex:column headerValue="Group">
+                    <apex:outputText value="{!item.Group__r.name}"/>
+                </apex:column>
+                <apex:column headerValue="Question">
+                    <apex:outputText value="{!item.Question__r.name}"/>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

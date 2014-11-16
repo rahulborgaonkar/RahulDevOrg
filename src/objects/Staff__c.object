@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <fields>
+        <fullName>Department__c</fullName>
+        <label>Department</label>
+        <referenceTo>Department__c</referenceTo>
+        <relationshipLabel>Staff</relationshipLabel>
+        <relationshipName>Staff</relationshipName>
+        <required>true</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Staff_Email__c</fullName>
+        <label>Staff Email</label>
+        <required>true</required>
+        <type>Email</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Staff_Full_Name__c</fullName>
+        <label>Staff Full Name</label>
+        <length>80</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Staff</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Staff_Full_Name__c</columns>
+        <columns>Staff_Email__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>Staff-{0000}</displayFormat>
+        <label>Staff Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Staff</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Staff_Full_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Staff_Email__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Staff_Full_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Department__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Staff_Email__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Staff_Full_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Staff_Email__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

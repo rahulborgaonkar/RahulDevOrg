@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <fields>
+        <fullName>Department_Head_Email__c</fullName>
+        <label>Department Head Email</label>
+        <required>true</required>
+        <type>Email</type>
+    </fields>
+    <label>Department</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Department_Head_Email__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Department Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Departments</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Department_Head_Email__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>chklen</fullName>
+        <active>true</active>
+        <errorConditionFormula>LEN( Department_Head_Email__c ) &lt; 10</errorConditionFormula>
+        <errorDisplayField>Department_Head_Email__c</errorDisplayField>
+        <errorMessage>Lenth should be greater than 10 chars</errorMessage>
+    </validationRules>
+</CustomObject>

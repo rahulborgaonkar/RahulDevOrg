@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <value>Feedback Template</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Feedback Templates</value>
+    </caseValues>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+        <relationshipLabel><!-- Feedback Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Feedback Link --></label>
+        <name>Feedback_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback Validity Date --></label>
+        <name>Feedback_Validity_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rating Group --></label>
+        <name>Rating_Group__c</name>
+        <relationshipLabel><!-- Feedback Templates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Staff Email --></label>
+        <name>Staff_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Staff Name --></label>
+        <name>Staff_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Staff --></label>
+        <name>Staff__c</name>
+        <relationshipLabel><!-- Feedback Templates --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Feedback Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

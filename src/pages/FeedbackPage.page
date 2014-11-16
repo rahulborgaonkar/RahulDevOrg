@@ -1,0 +1,33 @@
+<apex:page standardController="Feedback__c" extensions="FeedbackQuestionController" action="{!validate}" cache="false">
+    <apex:sectionHeader title="Student Feedback"/>
+    <apex:form >
+        <apex:pageMessages />
+        <apex:pageBlock title="Feedback Details">
+            <apex:pageBlockSection columns="2">
+                <apex:outputField value="{!Feedback__c.name}"/>
+                <apex:outputText value="{!Feedback__c.Staff_Name__c}"/>
+                <apex:inputText label="Student Roll Number" value="{!studentrollno}" id="strollno" required="true"/>
+                <apex:outputText value="{!Feedback__c.Staff_Email__c}"/>
+                <apex:outputText value="{!Feedback__c.Department__r.name}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        <apex:pageBlock title="Feedback Questions">
+            <apex:pageBlockTable value="{!question}" var="item">
+                <apex:column headerValue="Question Group">
+                    <apex:outputText value="{!item.Group__r.name}"/>
+                </apex:column>
+                <apex:column headerValue="Question">
+                    <apex:outputText value="{!item.Question__r.name}"/>
+                </apex:column>
+                <apex:column headerValue="Rating">
+                    <apex:selectList value="{!rating}" size="1">
+                        <apex:selectOptions value="{!items}"/>
+                    </apex:selectList>              
+                </apex:column>
+            </apex:pageBlockTable>
+            <apex:pageBlockButtons location="bottom">                
+                <apex:commandButton action="{!submitfeedback}" value="Submit Feedback"/>
+            </apex:pageBlockButtons>                    
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

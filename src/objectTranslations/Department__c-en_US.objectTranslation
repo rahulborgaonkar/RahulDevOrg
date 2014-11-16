@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <value>Department</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Departments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Department Head Email --></label>
+        <name>Department_Head_Email__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Lenth should be greater than 10 chars --></errorMessage>
+        <name>chklen</name>
+    </validationRules>
+</CustomObjectTranslation>

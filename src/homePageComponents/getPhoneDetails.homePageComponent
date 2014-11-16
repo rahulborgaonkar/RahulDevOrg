@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>&lt;br&gt; &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; &lt;script type=&quot;text/javascript&quot;&gt; var j$ = jQuery.noConflict(); j$(document).ready(function(){    alert(&apos;Hello&apos;);     var result = sforce.connection.describeGlobal();     var sobjects = result.getArray(&quot;sobjects&quot;);     alert(sobjects.length);}); &lt;/script&gt; &lt;br&gt;</body>
+    <pageComponentType>htmlArea</pageComponentType>
+    <width>narrow</width>
+</HomePageComponent>

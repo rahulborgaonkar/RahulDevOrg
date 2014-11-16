@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <fields>
+        <fullName>Department__c</fullName>
+        <label>Department</label>
+        <referenceTo>Department__c</referenceTo>
+        <relationshipName>Feedbacks</relationshipName>
+        <required>true</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Feedback_Link__c</fullName>
+        <label>Feedback Link</label>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Feedback_Validity_Date__c</fullName>
+        <label>Feedback Validity Date</label>
+        <required>true</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Rating_Group__c</fullName>
+        <label>Rating Group</label>
+        <referenceTo>Rating_Group__c</referenceTo>
+        <relationshipLabel>Feedback Templates</relationshipLabel>
+        <relationshipName>Feedback_Templates</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Staff_Email__c</fullName>
+        <label>Staff Email</label>
+        <type>Email</type>
+    </fields>
+    <fields>
+        <fullName>Staff_Name__c</fullName>
+        <label>Staff Name</label>
+        <length>80</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Staff__c</fullName>
+        <label>Staff</label>
+        <referenceTo>Staff__c</referenceTo>
+        <relationshipLabel>Feedback Templates</relationshipLabel>
+        <relationshipName>Feedback_Templates</relationshipName>
+        <required>true</required>
+        <type>Lookup</type>
+    </fields>
+    <label>Feedback Template</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Department__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>Feedback-{00000}</displayFormat>
+        <label>Feeback Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Feedback Templates</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Department__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

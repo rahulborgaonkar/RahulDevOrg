@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <label>Rating Group</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Rating Group Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Rating Groups</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>OBJECT_ID</lookupDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

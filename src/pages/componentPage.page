@@ -1,0 +1,15 @@
+<apex:page >
+    <c:myaccounts var="a">
+        <apex:panelGrid columns="2" border="1">
+            <apex:outputText value="{!a.name}"/>
+            <apex:panelGroup >
+                <apex:panelGrid columns="1">
+                    <apex:outputText value="Street - {!a.billingstreet}"/>
+                    <apex:panelGroup >
+                        <apex:outputText value="City - {!a.billingCity}, State - {!a.billingState} Postal Code - {!a.billingpostalcode}"/>
+                    </apex:panelGroup>
+                </apex:panelGrid>
+            </apex:panelGroup>
+        </apex:panelGrid>
+    </c:myaccounts>
+</apex:page>

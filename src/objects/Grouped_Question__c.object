@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <fields>
+        <fullName>Group__c</fullName>
+        <label>Group</label>
+        <referenceTo>Group__c</referenceTo>
+        <relationshipLabel>Grouped Questions</relationshipLabel>
+        <relationshipName>Grouped_Questions</relationshipName>
+        <required>true</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Question__c</fullName>
+        <label>Question</label>
+        <referenceTo>Question__c</referenceTo>
+        <relationshipLabel>Grouped Questions</relationshipLabel>
+        <relationshipName>Grouped_Questions</relationshipName>
+        <required>true</required>
+        <type>Lookup</type>
+    </fields>
+    <label>Grouped Question</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Group__c</columns>
+        <columns>Question__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>GQ-{00000}</displayFormat>
+        <label>Grouped Question Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Grouped Questions</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Group__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Question__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

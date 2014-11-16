@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <fields>
+        <fullName>Rating__c</fullName>
+        <label>Rating</label>
+        <length>10</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Related_Group__c</fullName>
+        <label>Related Group</label>
+        <length>80</length>
+        <type>Text</type>
+    </fields>
+    <label>Question</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Related_Group__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Question Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Questions</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Related_Group__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Related_Group__c</lookupDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>
