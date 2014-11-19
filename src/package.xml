@@ -1,41 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>*</members>
+        <members>blogController</members>
         <name>ApexClass</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexPage</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTrigger</name>
-    </types>
-    <types>
-        <members>Feedback__c</members>
-        <members>Question__c</members>
-        <members>Rating_Group__c</members>
-        <members>Related_Rating_Group__c</members>
-        <members>Staff__c</members>
-        <members>Account</members>
-        <members>Blog_Post__c</members>
-        <members>Campaign</members>
-        <members>Case</members>
-        <members>Group__c</members>
-        <members>Grouped_Question__c</members>
-        <members>Idea</members>
-        <members>Lead</members>
-        <members>Contact</members>
-        <members>Department</members>
-        <members>Feedback_Data__c</members>
-        <members>Feedback_Group__c</members>
-        <members>Opportunity</members>
-        <name>CustomObject</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>Workflow</name>
     </types>
     <version>15.0</version>
 </Package>
