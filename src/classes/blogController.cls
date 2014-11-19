@@ -1,5 +1,6 @@
 public class blogController 
 {
+//
     public PageReference handleNewPostClick() 
     {
         PageReference pageRef= new PageReference('/apex/blogedit');
