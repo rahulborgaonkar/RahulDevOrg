@@ -1,49 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <editHeading>true</editHeading>
-        <label>Information</label>
+        <label>Product Information</label>
         <layoutColumns>
             <layoutItems>
+                <behavior>Required</behavior>
+                <field>OrderId</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Name</field>
+                <field>Product2Id</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>ProductCode</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>ListPrice</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Department__c</field>
+                <field>UnitPrice</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Feedback_Validity_Date__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Rating_Group__c</field>
+                <field>Quantity</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>OwnerId</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>Staff__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Staff_Name__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Staff_Email__c</field>
+                <behavior>Readonly</behavior>
+                <field>TotalPrice</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
-        <editHeading>true</editHeading>
         <label>System Information</label>
         <layoutColumns>
             <layoutItems>
@@ -60,28 +54,25 @@
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
-        <customLabel>true</customLabel>
-        <detailHeading>true</detailHeading>
-        <editHeading>true</editHeading>
-        <label>Custom Links</label>
-        <layoutColumns/>
-        <layoutColumns/>
-        <layoutColumns/>
-        <style>CustomLinks</style>
-    </layoutSections>
-    <layoutSections>
-        <customLabel>true</customLabel>
-        <label>New Section</label>
+        <label>Description Information</label>
         <layoutColumns>
             <layoutItems>
-                <emptySpace>true</emptySpace>
+                <behavior>Edit</behavior>
+                <field>Description</field>
             </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>
     </layoutSections>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>Group__c</fields>
-        <relatedList>Feedback_Group__c.Feedback__c</relatedList>
-    </relatedLists>
+    <layoutSections>
+        <label>Additional Information</label>
+        <layoutColumns/>
+        <layoutColumns/>
+        <style>TwoColumnsLeftToRight</style>
+    </layoutSections>
+    <multilineLayoutFields>Product2Id</multilineLayoutFields>
+    <multilineLayoutFields>Quantity</multilineLayoutFields>
+    <multilineLayoutFields>UnitPrice</multilineLayoutFields>
+    <multilineLayoutFields>ListPrice</multilineLayoutFields>
+    <multilineLayoutFields>Description</multilineLayoutFields>
+    <multilineLayoutFields>OrderId</multilineLayoutFields>
 </Layout>

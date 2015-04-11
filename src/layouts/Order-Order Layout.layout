@@ -1,96 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <headers>PersonalTagging</headers>
-    <headers>PublicTagging</headers>
     <layoutSections>
         <editHeading>true</editHeading>
-        <label>Opportunity Information</label>
+        <label>Order Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>OwnerId</field>
+                <behavior>Readonly</behavior>
+                <field>OrderNumber</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Name</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>AccountId</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Required</behavior>
+                <field>EffectiveDate</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Edit</behavior>
-                <field>CampaignId</field>
+                <field>CustomerAuthorizedById</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CompanyAuthorizedById</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>BillingAddress</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>ActivatedById</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>ContractId</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>TotalAmount</field>
+            </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Type</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>LeadSource</field>
+                <behavior>Required</behavior>
+                <field>Status</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>IsPrivate</field>
-            </layoutItems>
-        </layoutColumns>
-        <style>TwoColumnsTopToBottom</style>
-    </layoutSections>
-    <layoutSections>
-        <editHeading>true</editHeading>
-        <label>Other Information</label>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Amount</field>
+                <field>ShippingAddress</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>ExpectedRevenue</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>CloseDate</field>
-            </layoutItems>
-        </layoutColumns>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>NextStep</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>StageName</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Probability</field>
+                <field>ActivatedDate</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
-        <editHeading>true</editHeading>
-        <label>Additional Information</label>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>MainCompetitors__c</field>
-            </layoutItems>
-        </layoutColumns>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>CurrentGenerators__c</field>
-            </layoutItems>
-        </layoutColumns>
-        <style>TwoColumnsLeftToRight</style>
-    </layoutSections>
-    <layoutSections>
-        <editHeading>true</editHeading>
         <label>System Information</label>
         <layoutColumns>
             <layoutItems>
@@ -107,7 +78,6 @@
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
-        <editHeading>true</editHeading>
         <label>Description Information</label>
         <layoutColumns>
             <layoutItems>
@@ -118,22 +88,28 @@
         <style>OneColumn</style>
     </layoutSections>
     <layoutSections>
-        <layoutColumns>
-            <layoutItems>
-                <customLink>DeliveryStatus</customLink>
-            </layoutItems>
-        </layoutColumns>
+        <label>Additional Information</label>
+        <layoutColumns/>
+        <layoutColumns/>
+        <style>TwoColumnsLeftToRight</style>
+    </layoutSections>
+    <layoutSections>
+        <layoutColumns/>
         <layoutColumns/>
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
     <relatedLists>
         <fields>Product2</fields>
+        <fields>ProductCode</fields>
         <fields>Quantity</fields>
         <fields>UnitPrice</fields>
-        <fields>ServiceDate</fields>
+        <fields>TotalPrice</fields>
         <fields>Description</fields>
-        <relatedList>RelatedLineItemList</relatedList>
+        <relatedList>RelatedOrderItemList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <relatedList>RelatedEntityHistoryList</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>TASK.SUBJECT</fields>
@@ -157,30 +133,6 @@
     <relatedLists>
         <relatedList>RelatedNoteList</relatedList>
     </relatedLists>
-    <relatedLists>
-        <relatedList>RelatedContactRoleList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>ACCOUNT.NAME</fields>
-        <fields>PARTNER.ROLE</fields>
-        <fields>PARTNER.PRIMARY</fields>
-        <relatedList>RelatedPartnerList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <relatedList>RelatedCompetitorList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <relatedList>RelatedOpportunityHistoryList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>ORDERS.ORDER_NUMBER</fields>
-        <fields>ORDERS.STATUS</fields>
-        <fields>ORDERS.EFFECTIVE_DATE</fields>
-        <fields>CONTRACT.CONTRACT_NUMBER</fields>
-        <fields>ORDERS.TOTAL_AMOUNT</fields>
-        <relatedList>RelatedOrderList</relatedList>
-    </relatedLists>
+    <relatedObjects>ContractId</relatedObjects>
     <relatedObjects>AccountId</relatedObjects>
-    <showEmailCheckbox>true</showEmailCheckbox>
-    <showRunAssignmentRulesCheckbox>true</showRunAssignmentRulesCheckbox>
 </Layout>

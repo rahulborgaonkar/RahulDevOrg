@@ -10,10 +10,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>FeedbackQuestionController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>ForgotPasswordController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -27,26 +23,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>SiteRegisterController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>TestFeedbackQuestionController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>TestUpdateGroupName</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>blogController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>exampleCon</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>myAccountsCon</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <fieldLevelSecurities>
@@ -440,6 +416,10 @@
     </fieldLevelSecurities>
     <fieldLevelSecurities>
         <editable>true</editable>
+        <field>Case.Previous__c</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>true</editable>
         <field>Case.Priority</field>
     </fieldLevelSecurities>
     <fieldLevelSecurities>
@@ -635,6 +615,10 @@
     <fieldLevelSecurities>
         <editable>true</editable>
         <field>Contract.OwnerExpirationNotice</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>true</editable>
+        <field>Contract.Pricebook2Id</field>
     </fieldLevelSecurities>
     <fieldLevelSecurities>
         <editable>false</editable>
@@ -967,6 +951,107 @@
         <field>OpportunityLineItem.TotalPrice</field>
     </fieldLevelSecurities>
     <fieldLevelSecurities>
+        <editable>false</editable>
+        <field>Order.ActivatedById</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>false</editable>
+        <field>Order.ActivatedDate</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>true</editable>
+        <field>Order.BillToContactId</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>true</editable>
+        <field>Order.BillingAddress</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>true</editable>
+        <field>Order.CompanyAuthorizedById</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>true</editable>
+        <field>Order.CompanyAuthorizedDate</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>false</editable>
+        <field>Order.ContractEndDate</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>false</editable>
+        <field>Order.ContractName</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>true</editable>
+        <field>Order.CustomerAuthorizedById</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>true</editable>
+        <field>Order.CustomerAuthorizedDate</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>true</editable>
+        <field>Order.Description</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>true</editable>
+        <field>Order.Name</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>false</editable>
+        <field>Order.OpportunityId</field>
+        <hidden>true</hidden>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>true</editable>
+        <field>Order.OrderReferenceNumber</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>true</editable>
+        <field>Order.PoDate</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>true</editable>
+        <field>Order.PoNumber</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>true</editable>
+        <field>Order.ShipToContactId</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>true</editable>
+        <field>Order.ShippingAddress</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>false</editable>
+        <field>Order.TotalAmount</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>true</editable>
+        <field>Order.Type</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>true</editable>
+        <field>OrderItem.Description</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>true</editable>
+        <field>OrderItem.EndDate</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>false</editable>
+        <field>OrderItem.ListPrice</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>false</editable>
+        <field>OrderItem.ProductCode</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
+        <editable>true</editable>
+        <field>OrderItem.ServiceDate</field>
+    </fieldLevelSecurities>
+    <fieldLevelSecurities>
         <editable>true</editable>
         <field>Product2.Description</field>
     </fieldLevelSecurities>
@@ -1080,6 +1165,9 @@
         <layout>Department__c-Department Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>DuplicateRecordSet-Duplicate Record Set Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Event-Event Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -1107,10 +1195,19 @@
         <layout>Lead-Lead Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Macro-Macro Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Opportunity-Opportunity Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>OpportunityLineItem-Opportunity Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Order-Order Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderItem-Order Product Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Pricebook2-Price Book Layout</layout>
@@ -1141,9 +1238,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>SocialPersona-Social Persona Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>SocialPost-Social Post Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Solution-Solution Layout</layout>
@@ -1235,6 +1329,15 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
+        <object>DuplicateRecordSet</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
         <object>Feedback_Data__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
@@ -1298,7 +1401,25 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
+        <object>Macro</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
         <object>Opportunity</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Order</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
@@ -1382,6 +1503,15 @@
         <object>Staff__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>StreamingChannel</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
     <pageAccesses>
         <apexPage>AnswersHome</apexPage>
         <enabled>true</enabled>
@@ -1399,22 +1529,6 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>FeedbackPage</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>FeedbackQuestionPage</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>FeedbackThankyouPage</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>FeedbackValidatePage</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
         <apexPage>FileNotFound</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
@@ -1424,6 +1538,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>ForgotPasswordConfirm</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>GoogleMap</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
@@ -1464,30 +1582,6 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>UnderConstruction</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>actionstatus</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>blog</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>blogedit</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>componentPage</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>positionpage</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>sampleToolbar</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <recordTypeVisibilities>
@@ -1566,6 +1660,10 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-DuplicateRecordSet</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-Idea</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -1574,7 +1672,15 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-Macro</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-Opportunity</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Order</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
@@ -1592,5 +1698,9 @@
     <tabVisibilities>
         <tab>standard-Solution</tab>
         <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-StreamingChannel</tab>
+        <visibility>DefaultOff</visibility>
     </tabVisibilities>
 </Profile>

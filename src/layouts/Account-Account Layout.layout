@@ -92,6 +92,14 @@
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>Google Map</label>
+        <layoutColumns/>
+        <style>OneColumn</style>
+    </layoutSections>
+    <layoutSections>
         <editHeading>true</editHeading>
         <label>Additional Information</label>
         <layoutColumns>
@@ -225,6 +233,14 @@
         <fields>OPPORTUNITY.NAME</fields>
         <fields>PARTNER.ROLE</fields>
         <relatedList>RelatedPartnerList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>ORDERS.ORDER_NUMBER</fields>
+        <fields>ORDERS.STATUS</fields>
+        <fields>ORDERS.EFFECTIVE_DATE</fields>
+        <fields>CONTRACT.CONTRACT_NUMBER</fields>
+        <fields>ORDERS.TOTAL_AMOUNT</fields>
+        <relatedList>RelatedOrderList</relatedList>
     </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
 </Layout>

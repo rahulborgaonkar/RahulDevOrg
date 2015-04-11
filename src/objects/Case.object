@@ -28,6 +28,30 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>Previous__c</fullName>
+        <label>Previous_Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>New</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Working</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Escalated</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
         <fullName>Product__c</fullName>
         <label>Product</label>
         <picklist>
